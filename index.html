@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Fill Loader (custom)</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <div id="data-buttons">
+        <span>Set the data rates</span>
+        <button class="button-control" data-val="0%" data-target="#liquid">0%</button>
+        <button class="button-control" data-val="20%" data-target="#liquid">20%</button>
+        <button class="button-control" data-val="40%" data-target="#liquid">40%</button>
+        <button class="button-control" data-val="60%" data-target="#liquid">60%</button>
+        <button class="button-control" data-val="80%" data-target="#liquid">80%</button>
+        <button class="button-control" data-val="100%" data-target="#liquid">100%</button>
+        <hr>
+        <span>Set the color</span>
+        <button class="button-color bc-green" data-val="hsla(130,60%,55%,1)" data-target="#liquid">GREEN</button>
+        <button class="button-color bc-red" data-val="hsla(0,90%,65%,1)" data-target="#liquid">RED</button>
+        <button class="button-color" data-val="hsla(275,15%,60%,1)" data-target="#liquid">PURPLE</button>
+        <button class="button-color bc-white" data-val="hsla(0,100%,100%,1)" data-target="#liquid">WHITE</button>
+    </div>
+	<div id="wrapper">
+        <div id="liquid" class="" data-rate="50%" data-rate-trigger="#text"></div>
+        <div id="text"></div>
+	</div>
+</body>
+</html>
